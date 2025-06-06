@@ -1,7 +1,12 @@
+ body{
+  font-family: "Kumbh Sans", sans-serif;
+ }
  .navbar{
     display: flex;
     justify-content: space-around;
     align-items: center;   
+    border-bottom: 1px solid gray;
+    margin: 40px;
 } 
   .nav-links{
     display: flex;
@@ -10,12 +15,25 @@
 }  
 li{
     list-style-type: none;
+    color: gray;
+}
+li:hover{
+  cursor: pointer;
 }
 h1{
   text-align: center; 
   font-weight: bold;
   font-size: 30px;
   
+}
+h2{
+  font-size: 15px;
+  color: gray;
+  margin-top: 10px;
+}
+.current-price, h3{
+  font-weight: bold;
+  font-size: 25px;
 }
 .product-section{
   display: flex;
@@ -30,8 +48,54 @@ h1{
   grid-template-rows: auto auto;
   gap: 10px;
   padding: 20px;
+  max-width: 300px;
 }
 .top-grid-section{
   grid-column: 1 / 5;
+  padding: 10px;
+} 
+.top-grid-section img{
+  width: 250px;
+  height: 300px;
+  border-radius: 20px;
+}
+.bottom-grid-section img{
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+}
+.about-section{
   padding: 20px;
+  max-width: 300px;
+}
+.discount-btn{
+  background-color: black;
+  color: white;
+  padding: 5px;
+  border-radius: 3px;
+  border: none;
+  margin: 10px;
+}
+.previous-price{
+  display: block;
+  text-decoration: line-through;
+  font-weight: bold;
+  color: gray;
+}
+.quantity-btn{
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin: 10px;
+}
+.quantity-btn img{
+  padding: 5px;
+  align-self: center;
+}
+.cart-btn{
+background-color: hsl(26, 100%, 55%);
+color: black;
+border: none;
+border-radius: 5px;
+padding: 10px 20px;
 }
